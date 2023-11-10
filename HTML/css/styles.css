@@ -10,6 +10,18 @@ body {
   height: 150px;
 }
 
+.img-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100%; /* Garante que a altura da div seja coberta pela imagem */
+}
+
+.img-container img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
 #header-nav {
   background-color: #ECB600;
   border-radius: 0;
@@ -45,7 +57,7 @@ body {
 }
 
 .navbar-brand p {
-  /* Kosher cert */
+  /* Certificação */
   color: #000;
   text-transform: uppercase;
   font-size: .7em;
@@ -53,7 +65,7 @@ body {
 }
 
 .navbar-brand p span {
-  /* Star-K */
+  /* Estrela Michelin */
   vertical-align: middle;
 }
 
@@ -79,13 +91,13 @@ body {
 }
 
 #telefone a {
-  /* Phone number */
+  /* Numero de Telefone */
   text-align: right;
   padding-bottom: 0;
 }
 
 #telefone div {
-  /* We Deliver */
+  /* Fazemos Delivery */
   color: #496936;
   text-align: right;
   padding-right: 15px;
@@ -101,9 +113,9 @@ body {
   margin-top: -30px;
 }
 
-/* END HEADER */
+/* Fim da Pagina */
 
-/* FOOTER */
+/* Rodapé */
 .panel-footer {
   margin-top: 30px;
   padding-top: 35px;
@@ -127,7 +139,7 @@ body {
 }
 
 #endereco p {
-  color: #8aca64;
+  color: #496936;
   font-size: .8em;
   line-height: 1.8;
 }
@@ -140,14 +152,14 @@ body {
   margin-top: 25px;
 }
 
-/* END FOOTER */
+/* Fim Da Pagina */
 
 
 
-/* HOME PAGE */
+/* Pagina Principal */
 .container .jumbotron {
-  box-shadow: 0 0 50px #3F0C1F;
-  border: 2px solid #3F0C1F;
+  box-shadow: 0 0 50px #6E1A10;
+  border: 2px solid #6E1A10;
 }
 
 #cardapio,
@@ -157,7 +169,7 @@ body {
   width: 100%;
   margin-bottom: 15px;
   position: relative;
-  border: 2px solid #3F0C1F;
+  border: 2px solid #6E1A10;
   overflow: hidden;
 }
 
@@ -192,23 +204,24 @@ body {
   opacity: .8;
 }
 
-/* END HOME PAGE */
+/* Fim da Pagina Principal */
 
 /* MENU CATEGORIES PAGE */
 .categoria {
   position: relative;
-  border: 2px solid #3F0C1F;
+  border: 2px solid #6E1A10;
   overflow: hidden;
-  max-width: 250px;
+  max-width: 250px; /*Inserir*/
+  margin: 0 auto 15px; /*Inserir*/
 }
 
 .categoria span {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 1.2em;
+  width: 100%; /*Inserir*/
+  text-align: center;/*Inserir*/
+  font-size: 1.2em;/*Inserir*/
   text-transform: uppercase;
   background-color: #000;
   color: #fff;
@@ -220,7 +233,7 @@ body {
 }
 
 #categorias-cardapio-titulo+div {
-  margin-bottom: 50px;
+  margin-bottom: 50px; /*Inserir*/
 }
 
 /* END MENU CATEGORIES PAGE */
@@ -237,8 +250,8 @@ body {
 .item-cardapio .item-cardapio-preco {
   font-size: 1.1em;
   text-align: right;
-  margin-top: -15px;
-  margin-right: -15px;
+  margin-top: -15px; /*Inserir*/
+  margin-right: -15px; /*Inserir*/
 }
 
 .item-cardapio .item-cardapio-preco span {
@@ -247,21 +260,21 @@ body {
 
 .item-cardapio-foto {
   position: relative;
-  border: 2px solid #3F0C1F;
+  border: 2px solid #6E1A10;
   overflow: hidden;
   padding: 0;
-  margin-right: -15px;
-  margin-left: auto;
-  margin-bottom: 20px;
-  max-width: 250px;
+  margin-right: -15px; /*Inserir*/
+  margin-left: auto; /*Inserir*/
+  margin-bottom: 20px; /*Inserir*/
+  max-width: 250px; /*Inserir*/
 }
 
 .item-cardapio-foto div {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 80px;
-  background-color: #29421b;
+  width: 80px; /*Inserir*/
+  background-color: #29421b; /*Inserir*/
   text-align: center;
 }
 
