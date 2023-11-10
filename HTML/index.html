@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Grand Bistro Restaurant</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css"">
+	<link rel="stylesheet" href="./css/styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,7 +16,7 @@
           <a href="index.html" class="pull-left visible-md visible-lg">
             <div id="logo-img"></div>
           </a>
-
+    
           <div class="navbar-brand">
             <a href="index.html">
               <h1>Grand Bistro Restaurant</h1>
@@ -25,39 +25,55 @@
               <img src="images/michelin-star-small.png" alt="Certificação Michelin">
               <span>Certificado com a Estrela Michelin.</span>
             </p>
-        </div>
-
-        <button type="button" id="navbarToggle" class="navbar-toggle collapsed">
+          </div>
+    
+          <button type="button" id="navbarToggle" class="navbar-toggle collapsed">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-        </button>
-      </div>
-
-      <div id="collapsable-nav" class="collapse navbar-collapse">
-        <ul id="nav-list" class="nav navbar-nav navbar-right">
-          <li id="navHomeButton" class="visible-xs active">
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="cardapio.html"><span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Cardápio</a>
-          </li>
-          <li>
-            <a href="sobre.html"><span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Sobre</a>
-          </li>
-          <li>
-            <a href="#"><span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Premiações</a>
-          </li>
-          <li id="telefone" class="hidden-xs">
+          </button>
+        </div>
+    
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="cardapio.html">
+                <span class="glyphicon glyphicon-cutlery"></span>
+                <br class="hidden-xs"> Cardápio
+              </a>
+            </li>
+            <li>
+              <a href="sobre.html">
+                <span class="glyphicon glyphicon-info-sign"></span>
+                <br class="hidden-xs"> Sobre
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-certificate"></span>
+                <br class="hidden-xs"> Premiações
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Prêmio 1</a></li>
+                <li><a href="#">Prêmio 2</a></li>
+              </ul>
+            </li>
+            <li id="telefone" class="hidden-xs">
               <a href="tel:+55-98-99999999">
                 <span>+55 98 9999-9999</span>
-              </a><div>* Fazemos delivery</div>
-          </li>
-        </ul>
+              </a>
+              <div>* Fazemos delivery</div>
+            </li>
+          </ul>
+        </div>
       </div>
-
     </nav>
+    
   </header>
 
   <div id="btn-ligar" class="visible-xs">
@@ -128,7 +144,8 @@
     </div>
   </footer>
   
-  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="../JavaScript/bootstrap.min.js"></script>
 </body>
 </html>
 
